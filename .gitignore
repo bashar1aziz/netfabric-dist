@@ -1,0 +1,9 @@
+# Environment — contains secrets, never commit
+.env
+
+# License files — received from NetFabric, never commit
+license.json
+license_*.json
+
+# macOS
+.DS_Store
