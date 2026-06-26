@@ -17,13 +17,13 @@ services:
       retries: 5
 
   app:
-    image: bashar1aziz/netfabric:latest
+    image: netlayer1/netfabric:latest
     ports:
       - "8000:8000"
     env_file:
       - .env
     volumes:
-      - ./license.json:/app/license/license.json:ro
+      - ./license:/app/license
       - netfabric-data:/app/data
     depends_on:
       db:
